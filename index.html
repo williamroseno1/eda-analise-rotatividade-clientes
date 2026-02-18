@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise Exploratória de Dados | Rotatividade de Clientes</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<favicon href="assets/favicon-preto.png" type="image/x-icon">
+</head>
+<body>
+
+<header>Analise Exploratória de Dados (EDA) </header>
+
+<div class="container">
+
+<div class="upload-box">
+  <strong>📂 Importar arquivo CSV:</strong>
+  <input type="file" id="fileInput" accept=".csv" title="Selecione um arquivo CSV para importar dados">
+</div>
+
+<div class="kpis">
+  <div class="kpi"><h4>Clientes 2024</h4><span id="k2024">0</span></div>
+  <div class="kpi"><h4>Clientes 2025</h4><span id="k2025">0</span></div>
+  <div class="kpi"><h4>Retidos</h4><span id="kRetidos">0</span></div>
+  <div class="kpi"><h4>Perdidos</h4><span id="kPerdidos">0</span></div>
+  <div class="kpi"><h4>Novos</h4><span id="kNovos">0</span></div>
+  <div class="kpi"><h4>Churn (%)</h4><span id="kChurn">0%</span></div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h3>Distribuição de Clientes</h3>
+    <canvas id="chartDonut"></canvas>
+  </div>
+  <div class="card">
+    <h3>Evolução da Base</h3>
+    <canvas id="chartLinha"></canvas>
+  </div>
+</div>
+
+<div class="grid-3">
+  <div class="card">
+    <h3>Ranking de Clientes (OS)</h3>
+    <canvas id="chartRanking"></canvas>
+  </div>
+  <div class="card">
+    <h3>Variação por Cliente</h3>
+    <canvas id="chartVariacao"></canvas>
+  </div>
+  <div class="card insights">
+    <h3>Insights Automáticos</h3>
+    <div id="insights"></div>
+  </div>
+</div>
+
+<div class="card">
+  <h3>Tabela Analítica de Clientes</h3>
+  <table id="tabela">
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>OS 2024</th>
+        <th>OS 2025</th>
+        <th>Variação</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+  </div>
+<footer>
+  <p><strong>Dashboard Executivo – Rotatividade de Clientes V 1.0</strong></p>
+  <p>Desenvolvido por William Roseno</p>
+  <p>© 2026 - Todos os direitos reservados</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
