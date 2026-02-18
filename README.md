@@ -7,7 +7,7 @@ Contexto de Negócio:
 4. Se o crescimento está sendo orgânico ou dependente de novos clientes
 
 Objetivo da Análise:
-1. Realizar uma Análise Exploratória de Dados (EDA) para:
+1. Realizar uma Análise Exploratória de Dados (EDA)
 2. Identificar clientes retidos, perdidos e novos
 3. Calcular churn rate
 4. Avaliar crescimento líquido da base
@@ -22,4 +22,5 @@ Técnologias Utilizadas:
 Como executar
 1. Baixe o projeto
 2. Abra o arquivo index.html
+
 3. Importe os dados no dashboard
